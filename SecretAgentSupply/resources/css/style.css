@@ -1,0 +1,459 @@
+html,
+body {
+  font-family: Helvetica;
+  font-size: 18px;
+  margin: auto;
+  padding: 0;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+/*Container*/
+
+
+.site.container {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*Header*/
+.header {
+  display: flex;
+  height: 2.32rem;
+  background-color: black;
+  width: 100%;
+  justify-content: center;
+}
+
+.header_container {
+  display: inline-flex;
+  width: 960px;
+}
+
+#logo {
+  height: 1.5rem;
+  padding: 0.41rem 1rem 0.41rem 0.5rem;
+}
+
+.company.name {
+  font-size: 1rem;
+  margin: 0.66rem 0;
+  color: white;
+  flex-wrap: wrap;
+}
+
+
+/*Banner*/
+.banner {
+  height: 25rem;
+  background-image: url("background-image/moto.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.banner_container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner_text {
+  display:flex;
+  height:auto;
+  width:960px;
+  flex-direction: column;
+}
+
+#new span {
+  display: flex;
+  align-items: flex-end;
+  height: auto;
+  font-weight: bold;
+  background-color: black;
+  margin-top: 9rem;
+  padding-top:2rem;
+  padding-left: 3rem;
+  padding-bottom: 0.25rem;
+  width:20rem;
+  flex-wrap: wrap;
+  color: white;
+}
+
+#sport span {
+  display: flex;
+  align-items: flex-start;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: black;
+  height: auto;
+  width: 20rem;
+  padding-left: 3rem;
+  padding-bottom: 2rem;
+  margin: 0;
+  flex-wrap: wrap;
+  color: white;
+}
+
+/*Menu*/
+
+.menu {
+  display: flex;
+  height: 2.5rem;
+  background-color: firebrick;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+
+}
+
+.menu ul {
+  display: inline-flex;
+  width: 960px;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.navigation {
+  color: white;
+}
+
+.tablet_menu {
+  display: none;
+}
+
+a:link {
+  text-decoration: none;
+  color:Snow;
+
+}
+
+a:visited {
+  color: Snow;
+}
+
+a:hover {
+  font-weight: bold;
+
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+
+/*Products*/
+.products {
+  display: inline-flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 960px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.box {
+  border: 4px solid black;
+  height: 15.5rem;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.picture {
+  display: flex;
+  height: 13rem;
+  width: 30%;
+}
+
+#pen img, #watch img{
+  height: 9rem;
+  margin-left:3rem;
+  margin-top:2rem;
+  margin-bottom: 2rem;
+}
+
+#glasses img {
+  height: 5rem;
+  margin-left:2.5rem;
+  margin-top:4rem;
+  margin-bottom:4rem;
+}
+
+
+.products p{
+  display: flex;
+  height: 2.5rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.clearfix {
+  clear:both;
+}
+
+
+/*Location and Hours*/
+.location-hours {
+  display: inline-flex;
+  width: 960px;
+  margin:0;
+  padding: 0;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.location-hours p{
+  display: flex;
+  width: 336px;
+  height: 3rem;
+  color: white;
+  background-color: black;
+  padding-left:2rem;
+  align-items: center;
+
+}
+
+
+/*Footer*/
+.footer {
+  display: flex;
+  width: 100%;
+  height: 5rem;
+  text-align: left;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_container {
+  display: flex;
+  width: 960px;
+}
+.footer span {
+  color: white;
+}
+
+
+
+/*RESPONSIVE DESIGN*/
+/*Tablet*/
+@media only screen and (max-width:1024px) and (min-width: 471px) {
+  /*Tablet: Header*/
+  #logo {
+    font-size: 1rem;
+    flex-shrink: 1.5;
+  }
+
+  .company.name {
+    flex-shrink: 1.5;
+  }
+
+  /*Tablet: Banner*/
+  .banner_text {
+    flex-shrink: 1.5;
+  }
+
+  #new span, #sport span {
+    flex-shrink: 1.5;
+  }
+
+  /*Tablet: Menu*/
+
+  nav.menu {
+    display: none;
+  }
+
+  .menu ul {
+    visibility: hidden;
+    display: none;
+  }
+
+  .tablet {
+    display: flex;
+    height: 2.5rem;
+    background-color: firebrick;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+  }
+
+  /*Tablet: Products*/
+  .products {
+
+    /*border: 1px solid blue;*/
+  }
+
+  .box {
+    width: 47%;
+  }
+
+  .picture {
+    width: 47%;
+    height: auto;
+    margin: auto;
+  }
+
+  #hidden {
+    display: none;
+  }
+}
+
+
+/*Mobile*/
+@media only screen and (max-width:470px) {
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: block;
+    vertical-align: baseline;
+  }
+
+  /*.site.container {
+    width: 100%;
+  }*/
+
+  /*Mobile: Header*/
+  .header {
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+  }
+
+  #logo {
+    margin: 0 auto;
+  }
+
+  span.company.name {
+    display: none;
+  }
+
+  /*Mobile: Banner*/
+  .banner {
+    width: 100%;
+    height: 15rem;
+  }
+
+  .banner_text{
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+  }
+
+  #new span {
+    font-size: 0.77rem;
+    margin-top: 10rem;
+    padding-top:1rem;
+    padding-left: 2rem;
+    /*padding-bottom: 0.25rem;*/
+    width:100%;
+    flex-wrap: wrap;
+  }
+
+  #sport span {
+    font-size: 1rem;
+    width: 100%;
+    padding-left: 2rem;
+    flex-wrap: wrap;
+    /*padding-bottom: 2rem;*/
+  }
+
+  /*Mobile: Menu*/
+
+  nav.menu {
+    display: none;
+  }
+
+  .menu ul {
+    visibility: hidden;
+    display: none;
+  }
+
+  .tablet {
+    display: flex;
+    height: 2.5rem;
+    background-color: firebrick;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+  }
+
+  /*Mobile: Products*/
+  .products {
+    display: flex;
+    width: 90%;
+  }
+
+  .box {
+    display: flex;
+    width: 90%;
+    margin:0;
+  }
+
+  .box a {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #pen {
+    width: auto;
+  }
+
+  .box a > p {
+    display: flex;
+    width: inherit;
+  }
+
+  .products div ~ div {
+    display: none;
+  }
+
+  /*Mobile: Location and Hours*/
+  .location-hours {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .office {
+    flex-wrap: wrap;
+  }
+
+  /*Mobile: Footer*/
+  .footer {
+    display: flex;
+    width: 100%;
+  }
+
+  .footer_container {
+    justify-content: center;
+    text-align: center;
+  }
+
+}
